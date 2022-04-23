@@ -13,7 +13,8 @@
 }
 .menu-infoUser-nome p {
     margin: auto;
-    font-size: 12px;
+    font-size: 0.9rem;
+
 }
 
 .menu-links{
@@ -82,17 +83,13 @@
     width: 95%;
 }
 
-.feed-itens-cards-table tr td{
-    font-size: 0.6rem;
-}
-
 
 .card{
     max-width: 800px;
 }
 
 .card-text{
-    font-size: 0.6rem;
+    font-size: 0.99rem;
 
 }
 
@@ -111,6 +108,10 @@
 
 /* MOBILE */
 
+.feed-itens-cards-table tr td {
+    font-size: 0.9rem;
+}
+
 
 .feed-itens-cards-info-mobile {
     display: none;
@@ -121,6 +122,7 @@
 
     .menu-infoUser-img img{
         width: 10vw;
+        margin-top: 5%;
     }
     .menu-infoUser-img{
         text-align: center;
