@@ -13,7 +13,8 @@
 }
 .menu-infoUser-nome p {
     margin: auto;
-    font-size: 12px;
+    font-size: 0.9rem;
+
 }
 
 .menu-links{
@@ -37,10 +38,10 @@
 
 .feed{
     background-color: #E5E5E5;
-    height: 90vh;
+    height: 100vh;
 }
 .feed-container{
-    height: 90vh
+    height: 100vh
 }
 
 .feed-post-create{
@@ -82,17 +83,13 @@
     width: 95%;
 }
 
-.feed-itens-cards-table tr td{
-    font-size: 0.6rem;
-}
-
 
 .card{
     max-width: 800px;
 }
 
 .card-text{
-    font-size: 0.6rem;
+    font-size: 0.99rem;
 
 }
 
@@ -108,43 +105,67 @@
 } */
 
 
-.mobile-nav{
-    height: 10vh;
-}
-.mobile-nav-favorite, .mobile-nav-post, .mobile-nav-perfil{
-    text-align: center;
-    margin-top: 2%;
-}
-
-
 
 /* MOBILE */
-@media (max-width: 1200px) {
-    .menu, .card-body{
+
+.feed-itens-cards-table tr td {
+    font-size: 0.9rem;
+}
+
+
+.feed-itens-cards-info-mobile {
+    display: none;
+    
+}
+
+@media (max-width: 700px) {
+
+    .menu-infoUser-img img{
+        width: 10vw;
+        margin-top: 5%;
+    }
+    .menu-infoUser-img{
+        text-align: center;
+    
+    }
+
+    .feed {
+        height: 90vh;
+
+    }
+
+    .feed-container{
+        height: 90vh;
+    }
+
+    .desktop{
         display: none;
     }
 
-    .feed-post-create{
-        display: none;
+    .mobile-nav{
+        height: 10vh;
     }
 
-    .card:active{
-        
+    .mobile-nav-favorite, .mobile-nav-post, .mobile-nav-perfil{
+        text-align: center;
+        margin-top: 2%;
     }
 }
 
 
 /* DESKTOP */
-@media (min-width: 1200px) {
-    .mobile-nav {
+@media (min-width: 700px) {
+    /* .mobile-nav {
         display: none;
     }
 
     .feed, .feed-container{
         height: 100vh;
-    }
+    } */
 
-    
+    .mobile{
+        display: none;
+    }
  
 
     

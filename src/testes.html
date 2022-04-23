@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HIPET</title>
+  </head>
+  <body>
+    <div style="width: 100px; background-color: brown;" id="title-div">  Click here</div>
+
+
+    <script>
+        window.onload = function () {
+            var el = document.getElementById('title-div');
+            console.log(el)
+            el.onclick = sayHello;
+        }
+
+        function sayHello() {
+            console.log("Hello");
+        }
+
+
+    </script>
+
+
+  </body>
+</html>
