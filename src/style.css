@@ -83,27 +83,22 @@
     width: 95%;
 }
 
-
 .card{
     max-width: 800px;
 }
 
 .card-text{
     font-size: 0.99rem;
-
 }
 
 .icon-heart, .icon-share, .icon-chat {
     text-align: center;
-
 }
-
 
 /*########## mobile-nav ########## */
 /* .desktop{
     height: ;
 } */
-
 
 
 /* MOBILE */
