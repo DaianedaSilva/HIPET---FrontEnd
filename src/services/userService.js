@@ -73,7 +73,7 @@ function register(){
                 Seu usuário foi criado com sucesso use o e-mail e o password para logar :D
             </div>
             <div class="modal-footer">
-                <a href="http://127.0.0.1:5500/src/login.html"> <button type="button" class="btn btn-primary" >Ir para Login</button> </a>
+                <a href="login.html"> <button type="button" class="btn btn-primary" >Ir para Login</button> </a>
             </div>
             `
 
@@ -127,7 +127,8 @@ function login(){
             localStorage.setItem('deslogado', 'nao');
             localStorage.setItem('email', email);
 
-            window.location.href = "http://127.0.0.1:5500/src/feed.html";
+            
+            window.location.href = "feed.html";
         
         }else{
             console.log( "email e senha errada")

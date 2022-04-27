@@ -1,20 +1,28 @@
+:root{
+    --cor-bg-principal: #E5E5E5;
+    --cor-bg-card: #C4C4C4;
+    --cor-bg-button: #C4C4C4;
+    --cor-border-button: #292626;
+    --cor-icon: #222121;
+}
+
 .perfil{
     max-width: 600px;
-   
+    background-color: var(--cor-bg-principal);
 }
 
 .infoUser{
     width: 200px;
+    height: 20%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-
+    margin: 0 auto;
 }
 
-.infoUser-img img{
-    width: 60%;
 
+.infoUser-img {
+    width: 40%;
 }
+
 
 
 .label{
@@ -31,4 +39,66 @@
     appearance: none;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.buttonLogout button{
+    margin-top: 5%;
+}
+
+svg{
+    color: var(--cor-icon)
+}
+
+
+/*mobile*/
+@media (max-width: 700px) {
+    
+    .perfil-info{
+        height: 90vh;
+    }
+    .mobile-nav{
+        display: block;
+    }
+
+    .menu-infoUser-img img{
+        width: 10vw;
+        margin-top: 5%;
+    }
+
+    .menu-infoUser-img{
+        text-align: center;
+    }
+
+    .mobile-nav{
+        height: 10vh;
+    }
+
+    .mobile-nav{
+        display: flex;
+
+    }
+
+    .mobile-nav-favorite, .mobile-nav-post, .mobile-nav-perfil{
+        text-align: center;
+        margin-top: 2%;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 700px) {
+ 
+    .infoData{
+        margin-top: 4%;  
+    }
+    .perfil-info{
+        height: 100vh;
+    }
+  
+    .mobile-nav{
+        display: none;
+    }
+ 
+
+    
 }
