@@ -42,3 +42,11 @@ function userPerfil(){
 
     })  
 }
+
+function logOut(){
+
+    localStorage.setItem('deslogado', 'sim');
+    localStorage.removeItem('email');
+    window.location.href = "login.html";
+
+}
