@@ -1,0 +1,36 @@
+:root{
+    --cor-bg-principal: #E5E5E5;
+    --cor-bg-card: #C4C4C4;
+    --cor-bg-button: #C4C4C4;
+    --cor-border-button: #292626;
+    --cor-icon: #222121;
+}
+
+#logo{
+    text-align: center;
+    padding: 2%;
+}
+
+.form-login-password{
+    margin-top: 10%;
+}
+
+.login{
+    height: 100vh;
+    max-width: 600px;
+    background-color: var(--cor-bg-principal);
+    display: flex;
+    align-items: center;
+}
+
+
+.buttons{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-login{
+    padding: 10%;
+}
+

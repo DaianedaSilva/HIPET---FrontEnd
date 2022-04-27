@@ -1,0 +1,30 @@
+:root{
+    --cor-bg-principal: #E5E5E5;
+    --cor-bg-card: #C4C4C4;
+    --cor-bg-button: #C4C4C4;
+    --cor-border-button: #292626;
+    --cor-icon: #222121;
+}
+
+#logo{
+    text-align: center;
+    padding: 2%;
+}
+
+.register{
+    height: 100vh;
+    max-width: 600px;
+    background-color: var(--cor-bg-principal);
+    display: flex;
+
+    align-items: center;
+}
+
+.button{
+    margin-top: 8%;
+}
+
+.register-info{
+    margin: 0 auto;
+
+}
