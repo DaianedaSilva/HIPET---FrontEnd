@@ -1,3 +1,5 @@
+// import { createUser, loginUser } from '';
+// const api = require("../utilities/hipetAPI")
 const baseUrl ='https://hipet-server.herokuapp.com/api/';
 
 function createUser(userRequest){
@@ -38,10 +40,7 @@ function loginUser(userRequest){
     .catch(err => {return err})
 }
 
-
-
-function cadastro(){
-
+function register(){
     let user_email = document.getElementById("inputEmail").value;
     let user_password = document.getElementById("inputPassword").value;
     let user_name = document.getElementById("inputName").value;
@@ -105,15 +104,9 @@ function cadastro(){
             let divPopUp = document.querySelector('.modal-content')
 
             divPopUp.innerHTML = popUpOkay
-
-
-
         }
-        
     })
-
 }
-
 
 function login(){
     localStorage.setItem('deslogado', 'sim');
@@ -128,14 +121,14 @@ function login(){
 
     let data = loginUser(userLoginRequest)
 
-    
     data.then(data =>{
 
         if(data['status'] == "SUCCESS"){
-            window.location.href = "http://127.0.0.1:5500/src/index.html";
-            
             localStorage.setItem('deslogado', 'nao');
+            localStorage.setItem('email', email);
 
+            window.location.href = "http://127.0.0.1:5500/src/index.html";
+        
         }else{
             console.log( "email e senha errada")
             
@@ -143,8 +136,6 @@ function login(){
             popoverTriggerList.map(function (popoverTriggerEl) {
                 return new bootstrap.Popover(popoverTriggerEl)
             })
-
-        }
-        
+        }  
     })
 }
