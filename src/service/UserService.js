@@ -127,7 +127,7 @@ function login(){
             localStorage.setItem('deslogado', 'nao');
             localStorage.setItem('email', email);
 
-            window.location.href = "http://127.0.0.1:5500/src/index.html";
+            window.location.href = "http://127.0.0.1:5500/src/feed.html";
         
         }else{
             console.log( "email e senha errada")
