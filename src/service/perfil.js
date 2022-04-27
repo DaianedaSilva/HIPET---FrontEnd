@@ -31,10 +31,9 @@ function userPerfil(){
     let divDocment = document.getElementById('document')
      
     _dataUser.then(_data =>{
-        console.log(_data)
         
         divNameTitle.innerHTML = "Olá " + _data['user']['name'] + "!"
-
+        
         divName.innerHTML = _data['user']['name']
         divEmail.innerHTML = _data['user']['email']
         divNickName.innerHTML = _data['user']['nickName']
