@@ -48,25 +48,24 @@
 /* #############  FEED  #############*/
 
 
-.feed{
+.create-post{
     background-color: var(--cor-bg-principal);
     height: 100vh;
 }
-.feed-container{
+.create-post-container{
     height: 100vh
 }
 
-.feed-post-create{
+.create-post-post-create{
     margin-bottom: 5%;
 }
 
-.feed-post-create-img img{
+.create-post-post-create-img img{
     width: 90%;
-    
 }
 
 
-.feed-post-textArea textarea{
+.create-post-post-textArea textarea{
     font-size: 12px;
     background-color: var(--cor-bg-card);
     padding: 1%;
@@ -74,36 +73,26 @@
     
 }
 
-.feed-itens-cards{
-    /* height: 80vh; */
+/*#### forms ####*/
+.label{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(33, 37, 41);
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgb(206, 212, 218);
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
-.card{
-    background-color: var(--cor-bg-card);
-    border-radius: 1;
-
-}
-
-.feed-itens-cards-img {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.feed-itens-cards-img img{
-    margin: 1%;
-    width: 95%;
-}
-
-.card{
-    max-width: 800px;
-}
-
-.card-text{
-    font-size: 0.99rem;
-}
-
-
+textarea {
+    resize: none;
+  }
 
 /*########## mobile-nav ########## */
 .icon-share, .icon-chat {
@@ -117,16 +106,6 @@ svg{
 
 
 
-.feed-itens-cards-table tr td {
-    font-size: 0.9rem;
-}
-
-
-.feed-itens-cards-info-mobile {
-    display: none;
-    
-}
-
 /*mobile*/
 @media (max-width: 700px) {
 
@@ -139,12 +118,12 @@ svg{
     
     }
 
-    .feed {
+    .create-post {
         height: 90vh;
 
     }
 
-    .feed-container{
+    .create-post-container{
         height: 90vh;
     }
 
