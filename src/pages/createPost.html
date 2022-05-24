@@ -96,58 +96,84 @@
                             <div class=" row g-3 infoData ">
 
                                 <h6> Informações do Animal</h6>
-
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Este animal esta em situação de abandono ou risco?</option>
-                                    <option value="healthState">Sim</option>
-                                    <option value="healthState">Não</option>
-                                    <option value="healthState">Não Sei</option>
+                               
+                                <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="inputAbandonedStatus">
+                                    <option selected value="Não preenchido">O animal esta em situação de risco ?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                    <option value="Não Sei">Não Sei</option>
                                 </select>
 
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>O animal esta machucado?</option>
-                                    <option value="healthState">Sim</option>
-                                    <option value="healthState">Não</option>
-                                    <option value="healthState">Não Sei</option>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example"id="inputHealthState">
+                                    <option selected value="Não preenchido">O animal esta machucado?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                    <option value="Não Sei">Não Sei</option>
+                                </select> -->
+
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example"id="inputHealthState">
+                                    <option selected value="Não preenchido">Situação do animal:</option>
+                                    <option value="VACCINATED">Machucado</option>
+                                    <option value="BRUISED">Vacinado</option>
+           
                                 </select>
 
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Qual a cor do animal?</option>
-                                    <option value="color">Branco</option>
-                                    <option value="color">Preto</option>
-                                    <option value="color">Manchado</option>
-                                    <option value="color">Castanho</option>
-                                    <option value="color">Caramelo</option>
-                                    <option value="color">Cinza</option>
-                                    <option value="color">Loiro</option>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="inputAnimalSpecie">
+                                    <option selected value="Não preenchido">Qual a espécie do animal ?</option>
+                                    <option value="DOG">Cachorro</option>
+                                    <option value="CAT">Gato</option>
                                 </select>
 
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>O animal é castrado?</option>
-                                    <option value="castrationState">Sim</option>
-                                    <option value="castrationState">Não</option>
-                                    <option value="castrationState">Não Sei</option>
-                                </select>
-
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>As vacinas estão em dia?</option>
-                                    <option value="vaccinationStatus">Sim</option>
-                                    <option value="vaccinationStatus">Não</option>
-                                    <option value="vaccinationStatus">Não Sei</option>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="inputAnimalColor">
+                                    <option selected value="Não preenchido">Qual a cor do animal?</option>
+                                    <option value="BLACK">Branco</option>
+                                    <option value="WHITE">Preto</option>
+                                    <option value="MIXED">Manchado</option>
+                                    <!-- <option value="Castanho">Castanho</option>
+                                    <option value="Caramelo">Caramelo</option>
+                                    <option value="Cinza">Cinza</option>
+                                    <option value="Loiro">Loiro</option> -->
                                 </select>
 
                                 <div class="col-md-6">
+                                    <label for="inputNickName" class="form-label">Link da imagem do animal</label>
+                                    <input type="nickName" class="form-control" id="inputLinkPicture">
+                                </div>
+
+                                <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="inputCastrationState">
+                                    <option selected value="Não preenchido" >O animal é castrado?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                    <option value="Não Sei">Não Sei</option>
+                                </select> -->
+
+                                <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example"  id="inputVaccinationStatus">
+                                    <option selected value="Não preenchido">As vacinas estão em dia?</option>
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                    <option value="Não Sei">Não Sei</option>
+                                </select> -->
+
+                                <div class="col-md-6">
                                     <label for="inputTitle" class="form-label"> <h6>Diga um pouco sobre o animal! :D</h6></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="inputDescription" rows="3"></textarea>
                                 </div>
 
                                 
                                 <div class="col-12 d-flex justify-content-center button">
                                     <!-- <button type="button" class="btn btn-primary" onclick="cadastro()">Sign in</button> -->
-                                    <button  type="button" class="btn btn-primary "  data-bs-toggle="modal" data-bs-target="#popUpCadastro" onclick="register()">
+                                    <button  type="button" class="btn btn-primary "   data-bs-toggle="modal" data-bs-target="#poppopUpNewPost" onclick="createNewPost()">
                                      Criar Post
                                     </button>
                 
+                                </div>
+
+                                <div class="modal fade" id="poppopUpNewPost" tabindex="-1" aria-labelledby="poppopUpNewPostLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        
+                                    </div>
+                                    </div>
                                 </div>
                 
                             </div>
