@@ -301,7 +301,8 @@ function setUserName(){
 
 function createCards(){
 
-    let container = document.getElementById("containerFeed")
+    let containerDesktop = document.getElementById("containerFeed")
+    let containerMobile = document.getElementById("containerFeed-mobile")
     
     let data = listPosts()
     data.then(data =>{
@@ -387,7 +388,8 @@ function createCards(){
                             </div> `;
 
 
-            container.innerHTML += card;
+            containerDesktop.innerHTML += card;
+            containerMobile.innerHTML += card;
 
             }
             
